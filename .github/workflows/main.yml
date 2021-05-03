@@ -1,0 +1,19 @@
+name: Run Unit Test
+
+on:
+  push:
+    branches:
+      - develop
+      - main
+      - 'feature/*'
+      
+jobs:
+  run_unit_test:
+    timeout-minutes: 10
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build gradle testDevelopment
+        run: ./gradlew testDevelopmentDebugUnitTest
+      - name: Build gradle
+        run: ./gradlew build
