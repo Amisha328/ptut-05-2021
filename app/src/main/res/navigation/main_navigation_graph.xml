@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/main_navigation_homeFragment">
+
+    <fragment
+        android:id="@+id/main_navigation_guidesFragment"
+        android:name="com.iem.ptut.GuidesFragment"
+        android:label="fragment_guides"
+        tools:layout="@layout/fragment_guides" />
+    <fragment
+        android:id="@+id/main_navigation_homeFragment"
+        android:name="com.iem.ptut.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/main_navigation_newsFragment"
+        android:name="com.iem.ptut.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+</navigation>
